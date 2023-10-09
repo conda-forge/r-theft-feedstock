@@ -1,4 +1,4 @@
-{% set version = "0.5.4" %}
+{% set version = "0.5.4.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/theft_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/theft/theft_{{ version }}.tar.gz
-  sha256: c661353bdd3f9d451e3565d0ce88fb0176ee79af308e6bb2e6200b73730affcd
+  sha256: c4c8541f049dfca5f5b53b81de693a705e5088b764b1d3986a92a2cecd30d54e
 
 build:
   merge_build_host: true  # [win]
