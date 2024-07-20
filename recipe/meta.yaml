@@ -1,7 +1,6 @@
 {% set version = "0.6.1" %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-theft
@@ -14,8 +13,7 @@ source:
   sha256: 1758e8d4197fb8784ccbf8cba62a924d7510cf66e647b62d7acad691d7c35739
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
