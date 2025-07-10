@@ -1,4 +1,4 @@
-{% set version = "0.6.3" %}
+{% set version = "0.8.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/theft_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/theft/theft_{{ version }}.tar.gz
-  sha256: 10eae51ee24b53aa8a6065ab352d3efb3fb1167a9dab690350603cc9e557f70e
+  sha256: b042444677eb372d1e85fd490fd4a0c0fc4911ff4fb1b7753f82bee32b3691cd
 
 build:
   number: 0
